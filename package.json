@@ -1,0 +1,37 @@
+{
+    "name": "inkvincible"
+    , "version": "1.0.0"
+    , "description": "My ultimate Nuxt.js project"
+    , "author": "Anudeep Chandra Paul"
+    , "private": true
+    , "scripts": {
+        "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server"
+        , "build": "nuxt build"
+        , "start": "cross-env NODE_ENV=production node server/index.js"
+        , "generate": "nuxt generate"
+        , "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build"
+        , "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate"
+        , "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    }
+    , "dependencies": {
+        "@nuxtjs/axios": "^5.3.6"
+        , "@nuxtjs/pwa": "^2.6.0"
+        , "cross-env": "^5.2.0"
+        , "express": "^4.16.4"
+        , "nuxt": "^2.4.0"
+        , "vue": "^2.5.18"
+        , "vue-template-compiler": "^2.5.0"
+        , "vuetify": "^1.5.5"
+        , "vuetify-loader": "^1.2.1"
+        , "vuex": "^3.1.0"
+        , "webpack": "^4.0.0"
+    }
+    , "devDependencies": {
+        "node-sass": "^4.9.0"
+        , "nodemon": "^1.18.9"
+        , "sass-loader": "^7.1.0"
+        , "push-dir": "^0.4.1"
+        , "stylus": "^0.54.5"
+        , "stylus-loader": "^3.0.2"
+    }
+}
