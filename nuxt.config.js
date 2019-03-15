@@ -2,7 +2,9 @@ const pkg = require('./package')
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 
 const router = {
-    base: 'inkvincible'
+    router: {
+        base: 'inkvincible'
+    }
 };
 
 module.exports = {
