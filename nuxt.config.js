@@ -1,11 +1,9 @@
 const pkg = require('./package')
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 
-const router = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-    router: {
-        base: 'inkvincible'
-    }
-} : {};
+const router = {
+    base: 'inkvincible'
+};
 
 module.exports = {
     mode: 'spa',
@@ -91,6 +89,6 @@ module.exports = {
          ** You can extend webpack config here
          */
         extend(config, ctx) {}
-    },
-    ...router
+    }
+    , ...router
 }
