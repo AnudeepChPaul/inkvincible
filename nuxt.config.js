@@ -3,7 +3,7 @@ const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 
 const router = {
     router: {
-        base: '/inkvincible/'
+        base: '/inkvincible'
     }
 };
 
